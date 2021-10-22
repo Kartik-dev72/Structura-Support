@@ -336,14 +336,10 @@ if __name__=="__main__":
     offsets={}
     root = Tk()
     root.title("Structura")
-    entry = Entry(root, textvariable = number)
-    def entryrandom():
-    entry_random = str(randint(2, 10))
-    entry.insert(END, entry_random)
-    Button(root, text = "random", width = 10, height = 1, command = entryrandom).grid(row=5, column=2)
     models={}
     FileGUI = StringVar()
     packName = StringVar()
+    packName.set("Structura-Test")
     icon_var = StringVar()
     icon_var.set("lookups/pack_icon.png")
     sliderVar = DoubleVar()
